@@ -1,0 +1,29 @@
+.video-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+    top: 200px;
+}
+
+.video{
+    width: 60%;
+    border: 1px solid #fff;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .video-section{
+        height: 30%;
+        top: 200px;
+    }
+
+    .video{
+        height: 30%;
+        width: 70%;
+    }
+}

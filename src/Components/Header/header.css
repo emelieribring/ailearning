@@ -1,0 +1,45 @@
+.header{
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.5)), url(../../Images/robot.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 9vh;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: antiquewhite;
+    font-weight: 600;
+    align-self: center;
+    text-align: center;
+}
+
+.startBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 8%;
+    border-radius: 15px;
+    text-transform: uppercase;
+    padding: 2%;
+    font-weight: 100;
+    font-size: 3vh;
+    background-color: antiquewhite;
+    border: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .title{
+        font-size: 5vh;
+    }
+
+    .startBtn{
+        width: 70%;
+    }
+}
