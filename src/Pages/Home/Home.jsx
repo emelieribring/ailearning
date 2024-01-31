@@ -5,6 +5,7 @@ import SectionOne from '../../Components/SectionOne/SectionOne';
 import Header from '../../Components/Header/Header';
 import SectionTwo from '../../Components/SectionTwo/SectionTwo';
 import SectionThree from '../../Components/SectionThree/SectionThree';
+import SectionFour from '../../Components/SectionFour/SectionFour';
 
 export default function Home() {
     useEffect(() => {
@@ -33,6 +34,7 @@ export default function Home() {
             <div className="background-wrapper">
                 <div className="background"></div>
             </div>
+            <SectionFour/>
             <SectionOne/>
             <SectionOne/>
             <SectionTwo/>

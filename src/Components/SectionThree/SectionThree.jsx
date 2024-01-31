@@ -60,8 +60,6 @@ export default function SectionThree() {
         <p className='leftText'>Tryck på pilarna för att se en konversation med ChatGPT</p>
         <div className="arrow-buttons">
           <button className='prevConv' onClick={prevConversation} disabled={currentConversation === 0}>Föregående konversation</button>
-          <button className='clickLeft' onClick={prevBubble} disabled={visibleBubbles.length === 1}>◄</button>
-          <button className='clickRight' onClick={nextBubble} disabled={visibleBubbles.length === totalBubbles}>►</button>
           <button className='nextConv' onClick={nextConversation} disabled={currentConversation === conversations.length - 1}>Nästa konversation</button>
         </div>
       </div>
@@ -71,6 +69,10 @@ export default function SectionThree() {
             <p><strong>{index % 2 === 0 ? 'Prompt:' : 'Svar:'}</strong> {conversations[currentConversation][bubbleIndex]}</p>
           </div>
         ))}
+        <div>
+            <button className='clickLeft' onClick={prevBubble} disabled={visibleBubbles.length === 1}>◄</button>
+            <button className='clickRight' onClick={nextBubble} disabled={visibleBubbles.length === totalBubbles}>►</button>
+        </div>
       </div>
     </div>
   );
