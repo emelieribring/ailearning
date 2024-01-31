@@ -1,0 +1,7 @@
+.section-four{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(34, 139, 34, 0.8);
+    display: flex;
+    margin-top: 10%;
+}

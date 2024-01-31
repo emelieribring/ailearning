@@ -48,6 +48,7 @@
     margin: 10px;
     border-radius: 50%;
     border: none;
+    margin-top: 40px;
 }
 
 .prevConv, .nextConv{
