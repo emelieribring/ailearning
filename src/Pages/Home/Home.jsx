@@ -3,8 +3,8 @@ import './home.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import SectionOne from '../../Components/SectionOne/SectionOne';
 import Header from '../../Components/Header/Header';
-import VideoSection from '../../Components/VideoSection/VideoSection';
 import SectionTwo from '../../Components/SectionTwo/SectionTwo';
+import SectionThree from '../../Components/SectionThree/SectionThree';
 
 export default function Home() {
     useEffect(() => {
@@ -34,10 +34,9 @@ export default function Home() {
                 <div className="background"></div>
             </div>
             <SectionOne/>
-            <VideoSection/>
             <SectionOne/>
             <SectionTwo/>
-            <SectionOne/>
+            <SectionThree/>
             <SectionOne/>
             <SectionOne/>
             <SectionOne/>
