@@ -37,8 +37,8 @@
     box-shadow: 0 0 10px rgba(255, 253, 232, 0.8); 
     animation: blink 1s infinite alternate; /* Animeringsnamn, varaktighet, iterationer, riktning */
     cursor: pointer;
-    left: 100px;
-    top: 150px;
+    left: 10%;
+    top: 15%;
 }
 
 .plus-1.clicked, .plus-2.clicked, .plus-3.clicked, .plus-4.clicked {
@@ -46,18 +46,18 @@
 }
 
 .plus-2{
-    left: 800px;
-    top: 300px;
+    left: 80%;
+    top: 30%;
 }
 
 .plus-3{
-    left: 400px;
-    top: 350px;
+    left: 40%;
+    top: 50%;
 }
 
 .plus-4{
-    left: 100px;
-    top: 500px;
+    left: 10%;
+    top: 70%;
 }
 
 @keyframes blink {
@@ -168,19 +168,24 @@
         height: 15vw;
     }
 
+    .plus-1{
+        left: 20%;
+        top: 20%;
+    }
+
     .plus-2{
-        left: 300px;
-        top: 200px;
+        left: 60%;
+        top: 30%;
     }
     
     .plus-3{
-        left: 250px;
-        top: 350px;
+        left: 40%;
+        top: 50%;
     }
     
     .plus-4{
-        left: 100px;
-        top: 400px;
+        left: 10%;
+        top: 70%;
     }
 
     .popup-box-1{
