@@ -6,6 +6,7 @@ import Header from '../../Components/Header/Header';
 import SectionTwo from '../../Components/SectionTwo/SectionTwo';
 import SectionThree from '../../Components/SectionThree/SectionThree';
 import SectionFour from '../../Components/SectionFour/SectionFour';
+import Footer from '../../Components/Footer/Footer';
 
 export default function Home() {
     useEffect(() => {
@@ -42,6 +43,7 @@ export default function Home() {
             <SectionOne/>
             <SectionOne/>
             <SectionOne/>
+            <Footer/>
     </div>
   )
 }

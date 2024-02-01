@@ -71,8 +71,8 @@
     height: 200px;
     background-color: rgb(156, 156, 156);
     position: absolute;
-    left: 200px;
-    top: 100px;
+    left: 20%;
+    top: 10%;
     border: 1px solid #fff;
     border-radius: 10px;
     opacity: 0; 
@@ -84,18 +84,18 @@
 }
 
 .popup-box-2{
-    left: 450px;
-    top: 150px;
+    left: 45%;
+    top: 15%;
 }
 
 .popup-box-3{
-    left: 300px;
-    top: 100px;
+    left: 30%;
+    top: 10%;
 }
 
 .popup-box-4{
-    left: 200px;
-    top: 450px; 
+    left: 20%;
+    top: 60%; 
     width: 450px;
     height: 200px;
 }
@@ -189,23 +189,23 @@
     }
 
     .popup-box-1{
-        left: 50px;
-        top: 280px;
+        left: 5%;
+        top: 28%;
     }
     
     .popup-box-2{
-        left: 50px;
-        top: 280px;
+        left: 10%;
+        top: 45%;
     }
     
     .popup-box-3{
-        left: 100px;
-        top: 100px;
+        left: 10%;
+        top: 10%;
     }
     
     .popup-box-4{
-        left: 10px;
-        top: 500px; 
+        left: 7%;
+        top: 10%; 
         width: 350px;
         height: 250px;
     }
