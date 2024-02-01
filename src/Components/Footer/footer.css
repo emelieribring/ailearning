@@ -23,7 +23,7 @@ body {
     align-self: center;
     position: relative;
     left: 48%;
-    top: 2rem;
+    top: 6%;
 }
 
 .atom{
@@ -41,43 +41,42 @@ body {
 }
 
 #atomcollab{
-    left: 3.5rem;
+    left: 7%;
 }
 
 #o{
-    transform: rotate(10deg);
-    left: 2.8rem;
-    top: -0.2rem;
+    transform: rotate(20deg);
+    left: 2vw;
 }
 
 #r{
     transform: rotate(50deg);
-    left: 0.5rem;
-    top: 0.5rem;
+    left: 0vw;
+    top: 1vw;
 }
 
 #a {
     transform: rotate(70deg);
-    left: -3rem; 
-    top: 2.5rem;
+    left: -3vw; 
+    top: 3vw;
 }
 
 #t {
-    transform: rotate(70deg);
-    top: 5.5rem;
-    left: -5rem;
+    transform: rotate(90deg);
+    top: 4.5vw;
+    left: -5vw;
 }
 
 #i {
     transform: rotate(100deg);
-    left: -6rem;
-    top: 7rem;
+    left: -7vw;
+    top: 6vw;
 }
 
 #on {
-    transform: rotate(100deg);
-    left: -10rem;
-    top: 11.5rem;
+    transform: rotate(80deg);
+    left: -10vw;
+    top: 11vw;
 }
 
 
@@ -91,6 +90,6 @@ body {
     position: absolute;
     margin: 0;
     padding: 0;
-    top: 270px;
+    top: 45%;
     font-weight: 700;
 }
