@@ -1,7 +1,7 @@
 .section-four{
     width: 100%;
     height: fit-content;
-    background-color: rgba(53, 61, 53, 0.8);
+    background-color: rgba(39, 36, 68, 0.5);
     display: flex;
     flex-direction: column;
     margin-top: 10%;
@@ -23,7 +23,7 @@
     font-size: 4vh;
 }
 
-.section-four-top, .section-four-middle, .section-four-bottom{
+.section-four-reflection{
     width: 100%;
     height: 33%;
     display: flex;
