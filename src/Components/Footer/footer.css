@@ -15,16 +15,20 @@ body {
     overflow-x: hidden;
     color: antiquewhite;
     align-items: flex-end;
+    justify-content: center;
+}
+
+.footer-text-div{
+    width: 90%;
 }
 
 .footer-text {
     width: 100%;
-    font-size: 21vw;
+    font-size: 20vw;
     position: relative;
     margin: 0;
     padding: 0;
     font-weight: 700;
-    top: 14%;
 }
 
 .dot{
