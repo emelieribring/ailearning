@@ -4,17 +4,19 @@ import './footer.css';
 export default function Footer() {
   return (
     <div className='footer'>
-        <div className="dot"></div> 
+        <div className="dot"></div>
         <p className='made'>made by </p>
-        <p id='atomcollab'>atom collab</p>
-        <p id='o'>o</p>
-        <p id='r'>r</p>
-        <p id='a'>a</p>
-        <p id='t'>t</p>
-        <p id='i'>i</p>
-        <p id='o2'>o</p>
-        <p id='n'>n</p> 
-        <p className='footer-text'>Ai GUIDE</p>
+        <p className='atomcollab'>atom collab</p>
+        <p className='o'>o</p>
+        <p className='r'>r</p>
+        <p className='a'>a</p>
+        <p className='t'>t</p>
+        <p className='i'>i</p>
+        <p className='o2'>o</p>
+        <p className='n'>n</p> 
+        <div>
+          <p className='footer-text'>Ai GUIDE</p>
+        </div>
     </div>
   )
 }
