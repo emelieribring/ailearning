@@ -35,7 +35,7 @@ body {
     background-color: antiquewhite;
     position: absolute;
     top: 58%;
-    left: 18.5%;
+    left: 19.5%;
     border-radius: 50%;
     z-index: 10;
 }
@@ -47,16 +47,16 @@ body {
 
 .made {
     font-size: 3vw;
-    align-self: center;
     position: absolute;
     left: 43.5%;
+    top: 37%;
 }
 
 #atomcollab {
     font-size: 6vw;
-    align-self: center;
     position: absolute;
     left: 56%;
+    top: 23%;
 }
 
 #atomcollab, #o, #r, #a, #t, #i, #o2, #n {
