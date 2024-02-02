@@ -180,3 +180,9 @@ body {
 
     
 }
+
+@media only screen and (min-width: 1500px) {
+    .footer-text {
+        font-size: 18vw;
+    }
+}
