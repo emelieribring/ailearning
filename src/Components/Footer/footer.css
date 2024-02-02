@@ -183,6 +183,20 @@ body {
 
 @media only screen and (min-width: 1500px) {
     .footer-text {
-        font-size: 18vw;
+        font-size: 19.5vw;
+    }
+
+    #atomcollab{
+        left: 53%;
+        top: 23%;
+    }
+
+    .made{
+        left: 40%;
+    }
+
+    .dot{
+        top: 63.5%;
+        left: 19.9%;
     }
 }
