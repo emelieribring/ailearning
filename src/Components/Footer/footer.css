@@ -33,17 +33,17 @@ body {
     width: 3.5vw;
     height: 3.5vw;
     background-color: antiquewhite;
-    position: absolute;
-    top: 58%;
-    left: 19.5%;
     border-radius: 50%;
-    z-index: 10;
+    position: relative;
+    right: 28.5%;
+    bottom: 31.4%;
+    z-index: 999;
 }
 
 .dot:hover{
-    background-color: rgb(93, 115, 255);
+    background-color: blueviolet;
+    cursor: pointer;
 }
-
 
 .made {
     font-size: 3vw;
@@ -52,58 +52,58 @@ body {
     top: 37%;
 }
 
-#atomcollab {
+.atomcollab {
     font-size: 6vw;
     position: absolute;
     left: 56%;
     top: 23%;
 }
 
-#atomcollab, #o, #r, #a, #t, #i, #o2, #n {
+.atomcollab, .o, .r, .a, .t, .i, .o2, .n {
     display: inline-block;
     transform-origin: bottom;
     position: absolute;
     font-size: 6vw;
 }
 
-#o {
+.o {
     transform: rotate(20deg);
     left: 85%;
     top: 23%;
 }
 
-#r {
+.r {
     transform: rotate(50deg);
     left: 88%;
     top: 23%;
 }
 
-#a {
+.a {
     transform: rotate(70deg);
     left: 88%;
     top: 30%;
 
 }
 
-#t {
+.t {
     transform: rotate(90deg);
     left: 89%;
     top: 35%;
 }
 
-#i {
+.i {
     transform: rotate(100deg);
     left: 89%;
     top: 40%;
 }
 
-#o2 {
+.o2 {
     transform: rotate(80deg);
     left: 88%;
     top: 50%;
 }
 
-#n{
+.n{
     transform: rotate(80deg);
     left: 89%;
     top: 60%;
@@ -111,72 +111,78 @@ body {
 }
 
 
-#o,
-#r,
-#a,
-#t,
-#i,
-#o2,
-#n {
-    transition: all 0.5s ease; /* Lägg till transition för alla egenskaper med 0.3 sekunders varaktighet och en 'ease' övergångsfunktion */
+.o,
+.r,
+.a,
+.t,
+.i,
+.o2,
+.n {
+    transition: all 0.5s ease; 
 }
 
-.dot:hover ~ #o{
+.dot:hover ~ .o{
     transform: rotate(0deg);
     left: 85%;
     top: 23%;
 }
-.dot:hover ~ #r{
+.dot:hover ~ .r{
     transform: rotate(0deg);
     left: 88%;
     top: 23%;
 }
-.dot:hover ~ #a{
+.dot:hover ~ .a{
     transform: rotate(0deg);
     left: 89%;
     top: 23%;
 }
-.dot:hover ~ #t{
+.dot:hover ~ .t{
     transform: rotate(0deg);
     left: 91.5%;
     top: 23%;
 }
-.dot:hover ~ #i{
+.dot:hover ~ .i{
     transform: rotate(0deg);
     left: 93%;
     top: 23%;
 }
-.dot:hover ~ #o2{
+.dot:hover ~ .o2{
     transform: rotate(0deg);
     left: 94%;
     top: 23%;
 }
-.dot:hover ~ #n {
+.dot:hover ~ .n {
     transform: rotate(0deg);
     left: 97%;
     top: 23%;
 
 }
 
+@media only screen and (max-width: 1080px) {
+
+    .footer {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .footer {
+        height: 40vh;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .footer {
+        height: 30vh;
+    }
+}
+
 
 @media only screen and (max-width: 500px) {
 
-    .footer-text {
-        font-size: 30vw;
-        margin-left: 10px;
-        top: 66%;
-        line-height: 80%;
+    .footer {
+        height:20vh;
     }
-
-    #ai{
-        position: relative;
-        left: 1.4%;
-    }
-
-    .made {
-        left: 44%;
-        top: 32%;
-    }
-
-    
 }
