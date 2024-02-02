@@ -161,16 +161,24 @@ body {
 @media only screen and (max-width: 1080px) {
 
     .footer {
-        height: 30vh;
+        height: 50vh;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 850px) {
+
+    .footer {
+        height: 40vh;
+    }
+}
+
+@media only screen and (max-width: 700px) {
 
     .footer {
         height: 30vh;
     }
 }
+
 
 @media only screen and (max-width: 500px) {
 
