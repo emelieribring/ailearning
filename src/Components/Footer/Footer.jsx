@@ -4,7 +4,7 @@ import './footer.css';
 export default function Footer() {
   return (
     <div className='footer'>
-        <div className="dot"></div>
+        <div className="dot"></div> 
         <p className='made'>made by </p>
         <p id='atomcollab'>atom collab</p>
         <p id='o'>o</p>
@@ -13,9 +13,10 @@ export default function Footer() {
         <p id='t'>t</p>
         <p id='i'>i</p>
         <p id='o2'>o</p>
-        <p id='n'>n</p>
+        <p id='n'>n</p> 
         <p className='footer-text'>Ai GUIDE</p>
     </div>
   )
 }
     
+

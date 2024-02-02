@@ -8,13 +8,25 @@ body {
     height: 70vh;
     background-color: #000;
     display: flex;
-    align-items: flex-end;
     margin: 0;
     position: relative;
     box-sizing: border-box;
     overflow-y: hidden;
     overflow-x: hidden;
     color: antiquewhite;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.footer-text {
+    width: 100%;
+    font-size: 20vw;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    top: 46%;
+    left: 5%;
 }
 
 .dot{
@@ -22,8 +34,8 @@ body {
     height: 3.5vw;
     background-color: antiquewhite;
     position: absolute;
-    top: 58.8%;
-    left: 16.2%;
+    top: 58%;
+    left: 19.5%;
     border-radius: 50%;
     z-index: 10;
 }
@@ -35,16 +47,16 @@ body {
 
 .made {
     font-size: 3vw;
-    align-self: center;
-    position: relative;
-    left: 44%;
-    top: 3%;
+    position: absolute;
+    left: 43.5%;
+    top: 37%;
 }
 
 #atomcollab {
     font-size: 6vw;
-    align-self: center;
-    position: relative;
+    position: absolute;
+    left: 56%;
+    top: 23%;
 }
 
 #atomcollab, #o, #r, #a, #t, #i, #o2, #n {
@@ -52,10 +64,6 @@ body {
     transform-origin: bottom;
     position: absolute;
     font-size: 6vw;
-}
-
-#atomcollab {
-    left: 56%;
 }
 
 #o {
@@ -102,19 +110,6 @@ body {
 
 }
 
-.footer-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-self: flex-end;
-    width: 100%;
-    font-size: 23rem;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 45%;
-    font-weight: 700;
-}
 
 #o,
 #r,
@@ -163,3 +158,25 @@ body {
 
 }
 
+
+@media only screen and (max-width: 500px) {
+
+    .footer-text {
+        font-size: 30vw;
+        margin-left: 10px;
+        top: 66%;
+        line-height: 80%;
+    }
+
+    #ai{
+        position: relative;
+        left: 1.4%;
+    }
+
+    .made {
+        left: 44%;
+        top: 32%;
+    }
+
+    
+}
