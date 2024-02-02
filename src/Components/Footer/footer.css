@@ -158,10 +158,39 @@ body {
 
 }
 
+@media only screen and (max-width: 1300px) {
+
+    .footer {
+        height: 65vh;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .footer {
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+
+    .footer {
+        height: 58vh;
+    }
+}
+
+
 @media only screen and (max-width: 1080px) {
 
     .footer {
         height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+
+    .footer {
+        height: 45vh;
     }
 }
 
