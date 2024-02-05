@@ -1,10 +1,10 @@
 .section-four{
     width: 100%;
     height: fit-content;
-    background-color: rgba(39, 36, 68, 0.5);
+    background-color: rgba(143, 135, 207, 0.2);
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 20%;
     justify-content: center;
     align-items: center;
     border-top: 1px solid #fff;

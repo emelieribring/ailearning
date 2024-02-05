@@ -1,24 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import './sectionFour.css';
+import './questionStart.css';
 
-export default function SectionFour() {
+export default function QuestionStart() {
 
-    // Define state variables to store the text content
   const [jobTitle, setJobTitle] = useState('');
   const [tasks, setTasks] = useState('');
   const [repetitiveTasks, setRepetitiveTasks] = useState('');
   const [creativeTasks, setCreativeTasks] = useState('');
   const [timeSaved, setTimeSaved] = useState('');
 
-  // Function to handle changes in text areas and save to local storage
   const handleInputChange = (event, setterFunction) => {
     const value = event.target.value;
     setterFunction(value);
-    // Save to local storage
     localStorage.setItem(event.target.name, value);
   };
 
-  // Function to load data from local storage on component mount
   const loadDataFromLocalStorage = () => {
     setJobTitle(localStorage.getItem('jobTitle') || '');
     setTasks(localStorage.getItem('tasks') || '');
@@ -27,7 +23,6 @@ export default function SectionFour() {
     setTimeSaved(localStorage.getItem('timeSaved') || '');
   };
 
-  // Load data from local storage on component mount
   useEffect(() => {
     loadDataFromLocalStorage();
   }, []);

@@ -7,7 +7,7 @@
     align-items: center;
     background-color: rgba(57, 56, 56, 0.8);
     position: relative;
-    top: 100px;
+    margin-top: 20%;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './sectionTwo.css';
+import './chatGPT.css';
 import 'animate.css';
 
-export default function SectionTwo() {
+export default function ChatGPT() {
 
     const [boxes, setBoxes] = useState([
         { 

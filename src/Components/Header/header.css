@@ -1,6 +1,4 @@
 .header{
-    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.5)), url(../../Images/robot.jpg);
-    background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;

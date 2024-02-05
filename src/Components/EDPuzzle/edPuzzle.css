@@ -1,0 +1,13 @@
+.edpuzzle{
+    width: 100%;
+    height: 90vh;
+    background-color: gold;
+    display: flex;
+    margin-top: 20%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.edpuzzle p{
+    font-size: 10vw;
+}

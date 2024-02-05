@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './sectionThree.css';
+import './promptEngineering.css';
 import 'animate.css';
 
-export default function SectionThree() {
+export default function PromptEngineering() {
   const [visibleBubbles, setVisibleBubbles] = useState([0]);
   const [currentConversation, setCurrentConversation] = useState(0);
 
