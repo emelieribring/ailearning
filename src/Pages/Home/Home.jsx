@@ -8,11 +8,9 @@ import SectionOne from '../../Components/SectionOne/SectionOne';
 import QuestionStart from '../../Components/QuestionStart/QuestionStart';
 import ChatGPT from '../../Components/ChatGPT/ChatGPT';
 import PromptEngineering from '../../Components/PromptEngineering/PromptEngineering';
-import QuestionWell from '../../Components/QuestionWell/QuestionWell';
-import EDPuzzle from '../../Components/EDPuzzle/EDPuzzle';
-import GammaApp from '../../Components/GammaApp/GammaApp';
-import GoblinTools from '../../Components/GoblinTools/GoblinTools';
+import Heads from '../../Components/Heads/Heads';
 import Footer from '../../Components/Footer/Footer';
+import AiTools from '../../Components/AiTools/AiTools.jsx';
 
 export default function Home() {
     useEffect(() => {
@@ -44,10 +42,8 @@ export default function Home() {
             <QuestionStart/>
             <ChatGPT/>
             <PromptEngineering/>
-            <QuestionWell/>
-            <EDPuzzle/>
-            <GammaApp/>
-            <GoblinTools/>
+            <AiTools/>
+            <Heads/>
             <SectionOne/>
             <Footer/>
     </div>

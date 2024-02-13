@@ -6,8 +6,20 @@
     margin-top: 20%;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
+    background-image: url(../../Images/gamma.app.jpg);
+    background-size: cover;
 }
 
-.gammaApp p{
-    font-size: 10vw;
+.gamma-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(46, 45, 67, 0.8);
+}
+
+.gamma-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-position: 70% 50%;
 }

@@ -1,7 +1,7 @@
 .section-four{
     width: 100%;
     height: fit-content;
-    background-color: rgba(143, 135, 207, 0.2);
+    background-color: rgba(85, 83, 99, 0.2);
     display: flex;
     flex-direction: column;
     margin-top: 20%;
@@ -10,6 +10,7 @@
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     transition: margin-top 0.5s ease-in-out; /* Lägg till övergångseffekt för smidig scrollning */
+    font-weight: 300;
 }
 
 .section-four-title{
@@ -39,7 +40,6 @@
     font-size: 2.5vh;
     color: antiquewhite;
     text-align: left;
-    font-weight: 100;
 }
 
 .inputReflection{

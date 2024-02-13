@@ -42,7 +42,7 @@ export default function QuestionStart() {
                 type="text"
                 value={jobTitle}
                 onChange={(e) => handleInputChange(e, setJobTitle)}
-                placeholder='Write your reflection here'
+                placeholder='Skriv din reflektion här..'
             />
         </div>
         <div className="section-four-reflection">
@@ -55,7 +55,7 @@ export default function QuestionStart() {
                 type="text"
                 value={tasks}
                 onChange={(e) => handleInputChange(e, setTasks)}
-                placeholder='Write your reflection here'
+                placeholder='Skriv din reflektion här..'
             />
         </div>
         <div className="section-four-reflection">
@@ -68,7 +68,7 @@ export default function QuestionStart() {
                 type="text"
                 value={creativeTasks}
                 onChange={(e) => handleInputChange(e, setCreativeTasks)}
-                placeholder='Write your reflection here'
+                placeholder='Skriv din reflektion här..'
             />
         </div>
         <div className="section-four-reflection">
@@ -81,7 +81,7 @@ export default function QuestionStart() {
                 type="text"
                 value={repetitiveTasks}
                 onChange={(e) => handleInputChange(e, setRepetitiveTasks)}
-                placeholder='Write your reflection here'
+                placeholder='Skriv din reflektion här..'
             />
         </div>
         <div className="section-four-reflection">
@@ -94,7 +94,7 @@ export default function QuestionStart() {
                 type="text"
                 value={timeSaved}
                 onChange={(e) => handleInputChange(e, setTimeSaved)}
-                placeholder='Write your reflection here'
+                placeholder='Skriv din reflektion här..'
             />
         </div>
     </div>

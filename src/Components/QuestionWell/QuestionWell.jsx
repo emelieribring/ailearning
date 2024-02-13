@@ -1,51 +1,89 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './questionWell.css';
-import questionImgOne from '../../Images/questionWell1.jpg';
-import questionImgTwo from '../../Images/QuestionWell2.jpg';
-import 'animate.css'; 
+import AiTools from '../AiTools/AiTools.jsx';
+import questionWellImg from '../../Images/questionWell1.jpg';
+
+const tipsData = [
+  {
+    tipText: 'Pros',
+    answerText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure beatae sint ab voluptas maiores eaque vitae, quibusdam dolorem iusto, totam omnis voluptatem ipsa amet cupiditate sequi velit ullam veniam quidem?',
+  },
+  {
+    tipText: 'Cons',
+    answerText: '    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure beatae sint ab voluptas maiores eaque vitae, quibusdam dolorem iusto, totam omnis voluptatem ipsa amet cupiditate sequi velit ullam veniam quidem?',
+  },
+  {
+    tipText: 'Tips',
+    answerText: 'Answer text for Tip 1',
+  },
+  {
+    tipText: 'Tips',
+    answerText: 'Answer text for Tip 2',
+  },
+  {
+    tipText: 'Tips',
+    answerText: 'Answer text for Tip 3',
+  }
+];
 
 export default function QuestionWell() {
+  const [showTools, setShowTools] = useState(true);
+  const [showAiTools, setShowAiTools] = useState(false);
+  const [tipStates, setTipStates] = useState(tipsData.map(() => false));
 
-   
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('show')
-      } else {
-        entry.target.classList.remove('show')
-      }
+  const handleBackBtn = () => {
+    setShowAiTools(true);
+    setShowTools(false);
+  };
+
+  const handleTipClick = (index) => {
+    setTipStates((prevStates) => {
+      const newTipStates = [...prevStates];
+      newTipStates[index] = !newTipStates[index];
+      return newTipStates;
     });
-  });
-  
- const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
-  
+  };
+
+  const getTipText = (index) => {
+    return tipStates[index] ? tipsData[index].answerText : tipsData[index].tipText;
+  };
 
   return (
-    <div className='section-five'>
-        <div className='section-five-left'>
-            <h1>Questionwell</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa asperiores porro 
-                vitae ullam, pariatur architecto dignissimos? Iusto sed provident rem, vero, 
-                repellendus accusantium consequuntur, hic inventore fugit corrupti nulla!
-                <br /> <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt 
-                molestias assumenda amet eligendi voluptates, et itaque sunt voluptatem 
-                necessitatibus sit, exercitationem blanditiis possimus asperiores expedita
-                animi dolore a labore quam!</p>
-                <img className='questionImg hidden' src={questionImgTwo} alt="" />
+    <div className="container">
+      {showTools && (
+        <div className='question-wells-box'>
+          <div className='btnDiv'>
+              <button onClick={handleBackBtn} className='goBackBtn'>Back</button>
+          </div>
+          <div className='question-well-about'>
+            <h1 className='question-well-about-title' >Questionwell</h1>
+            <p className='question-well-about-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, consequuntur! 
+              Dolores unde ipsam molestias perspiciatis doloremque reprehenderit vitae. 
+              Accusantium vel magnam molestiae perferendis assumenda veniam soluta ex voluptatibus cumque minus.
+            </p>
+            <img className='questionWellImg' src={questionWellImg} alt="questionWellImg" />
+          </div>
+          <div className="question-well-tips">
+            {tipsData.map((tip, index) => (
+              <div key={index} className={`tips-box ${tipStates[index] ? 'expanded' : ''}`}>
+                <p className='tip-text'>{getTipText(index)}</p>
+                <span
+                  onClick={() => handleTipClick(index)}
+                  className={`tip-arrow ${tipStates[index] ? 'tip-arrow-up' : ''}`}
+                >
+                  ↓
+                </span>
+                {tipStates[index] && (
+                  <div className="answer-div">
+                    <p>{tip.answerText}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
-        <div className='section-five-right'>
-            <img className='questionImg hidden' src={questionImgOne} alt="" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa asperiores porro 
-                vitae ullam, pariatur architecto dignissimos? Iusto sed provident rem, vero, 
-                repellendus accusantium consequuntur, hic inventore fugit corrupti nulla!
-                <br /> <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt 
-                molestias assumenda amet eligendi voluptates, et itaque sunt voluptatem 
-                necessitatibus sit, exercitationem blanditiis possimus asperiores expedita
-                animi dolore a labore quam!</p>
-        </div>
+      )}
+      {showAiTools && <AiTools />}
     </div>
-  )
+  );
 }

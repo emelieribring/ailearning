@@ -10,6 +10,7 @@
     margin-top: 20%;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
+    font-weight: 300;
 }
 
 .chat{
@@ -22,7 +23,7 @@
     background-image: url(../../Images/chatgpt.png);
 }
 
-.plus-1, .plus-2, .plus-3, .plus-4{
+.plus-1, .plus-2, .plus-3, .plus-4, .plus-5{
     display: flex;
     justify-content: center;
     width: 4vw;
@@ -41,7 +42,7 @@
     top: 15%;
 }
 
-.plus-1.clicked, .plus-2.clicked, .plus-3.clicked, .plus-4.clicked {
+.plus-1.clicked, .plus-2.clicked, .plus-3.clicked, .plus-4.clicked, .plus-5.clicked {
     background-color: rgb(100, 2, 72); /* Byt ut 'red' mot din önskade färgkod */
 }
 
@@ -60,16 +61,21 @@
     top: 70%;
 }
 
+.plus-5{
+    left: 70%;
+    top: 70%;
+}
+
 @keyframes blink {
     to {
       box-shadow: 0 0 20px rgba(255, 241, 241, 0.8); /* Justera skuggans egenskaper vid animeringens slutpunkt */
     }
   }
 
-.popup-box-1, .popup-box-2, .popup-box-3, .popup-box-4{
+.popup-box-1, .popup-box-2, .popup-box-3, .popup-box-4, .popup-box-5{
     width: 300px;
     height: 200px;
-    background-color: rgb(156, 156, 156);
+    background-color: rgb(194, 192, 192);
     position: absolute;
     left: 20%;
     top: 10%;
@@ -98,6 +104,14 @@
     top: 60%; 
     width: 450px;
     height: 200px;
+}
+
+.popup-box-5{
+    left: 10%;
+    top: 60%; 
+    width: 300px;
+    height: 400px;
+    z-index: 1;
 }
 
 
@@ -163,7 +177,7 @@
         background-position: 50% 50%;
     }
 
-    .plus-1, .plus-2, .plus-3, .plus-4{
+    .plus-1, .plus-2, .plus-3, .plus-4, .plus-5{
         width: 15vw;
         height: 15vw;
     }

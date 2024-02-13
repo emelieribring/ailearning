@@ -1,99 +1,121 @@
-.section-five{
+.question-wells-box{
     width: 100%;
-    height: fit-content;
+    height: 90vh;
+    background-color: rgb(109, 109, 109, 0.5);
     display: flex;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    flex-wrap: wrap;
-    margin-top: 20%;
-    background-color: rgba(255, 255, 255, 0.8);
 }
 
-.section-five-left{
+.btnDiv{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+}
+
+.goBackBtn{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    top: 5%;
+    left: 2%;
+}
+
+.question-well-about{
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #000;
+    justify-content: space-evenly;
+    color: #fff;
 }
 
-.section-five-left h1{
-    font-size: 8vh;
+.question-well-about-title{
+    font-size: 3vw;
     text-transform: uppercase;
-    position: relative;
-    color: antiquewhite;
+    margin: 0;
 }
 
-.section-five-left p{
-    padding: 50px;
-    font-size: 2.5vh;
+.question-well-about-text{
+    width: 70%;
+    margin: 0;
 }
 
-.section-five-right{
+.questionWellImg{
+    width: 80%;
+    border-radius: 10px;
+}
+
+.question-well-tips{
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tips-box{
+    position: relative;
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgb(16, 46, 80);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden; 
+    transition: height 0.3s ease;
+}
+
+.tip-text{
+    color: #fff;
+    letter-spacing: 2px;
+    position: relative;
+    right: 50px;
+    width: 80%;
+}
+
+.tip-arrow{
+    position: absolute;
+    left: -20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 10%;
+    height: 100%;
+    background-color: rgb(10, 71, 140);
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 3vw;
+    margin: 20px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 
-.questionImg{
-    width: 90%;
-    background-size: cover;
-    border: 1px solid #fff;
-    margin: 30px;
-    border-radius: 150px 0px 150px 0px; 
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+.answer-div {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
 }
 
-.questionImg{
-    opacity: 1;
+.tip-arrow-up {
+    transform: rotate(180deg);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-.questionImg:hover{
-    border-radius: 10px 10px 10px 10px; 
+.tips-box:hover .answer-div {
+    display: block; 
 }
 
-
-.section-five-right p{
-    padding: 50px;
-    font-size: 2.5vh;
-}
-
-.hidden{
-    opacity: 1;
-    filter: blur(5px);
-    transition: all 2s;
-}
-
-.show{
-opacity: 1;
-filter: blur(0);
-}
-
-@media(prefers-reduced-motion) {
-    .hidden{
-      transition: none;
-    }
-  }
-  
-
-@media only screen and (max-width: 700px) {
-    .section-five-left, .section-five-right{
-        width: 100%;
-    }
-
-    .section-five-left h1{
-        font-size: 6vh;
-    }
-
-    .questionImg{
-        border-radius: 10px;
-    }
-
-
+.tips-box.expanded {
+    height: 200px;  
 }

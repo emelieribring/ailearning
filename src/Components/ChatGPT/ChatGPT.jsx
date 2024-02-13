@@ -55,6 +55,20 @@ export default function ChatGPT() {
                 </div>
             ),
         },
+        { 
+            show: false, 
+            clicked: false, 
+            content: (
+                <div>
+                    <p>
+                        <strong>Be ChatGPT ställa frågor tillbaka:</strong> <br/> <strong>Prompt:</strong> "Jag vill göra en marknadsföringskamapanj på instagram. Vad ska jag tänka på? Ställ gärna frågor om du behöver mer specifik information." <br /> <br/>
+                        <strong>Svar från GPT:</strong> "Att skapa en marknadsföringskampanj på Instagram kräver planering och förståelse för målgruppen. Här är några steg och överväganden som kan hjälpa dig att komma igång:" <br /> <br/>
+                        * Vilken är din målgrupp? Definiera ålder, kön, intressen och andra relevanta faktorer.
+                        * Vad är ditt huvudmål med kampanjen? Öka försäljningen, öka medvetenheten, generera leads, eller något annat?
+                    </p>
+                </div>
+            ),
+        },
     ]);
 
     const plusClick = (index) => {
