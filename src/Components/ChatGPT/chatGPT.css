@@ -1,15 +1,12 @@
-
 .section-two{
     width: 100%;
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(57, 56, 56, 0.8);
+    /*background-color: rgba(0, 0, 0, 0.6);*/
     position: relative;
-    margin-top: 20%;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    margin-top: 2%;
     font-weight: 300;
 }
 
@@ -18,14 +15,14 @@
     height: 90%;
     background-size: cover;
     margin: 20px;
-    border-radius: 5px;
-    border: 1px solid #fff;
+    border-radius: 20px;
     background-image: url(../../Images/chatgpt.png);
 }
 
 .plus-1, .plus-2, .plus-3, .plus-4, .plus-5{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 4vw;
     height: 4vw;
     border-radius: 50%;
@@ -128,7 +125,8 @@
     font-size: 5vh;
     text-transform: uppercase;
     margin: 20px;
-    text-align: center;
+    position: relative;
+    left: 5%;
     color: antiquewhite;
 }
 
@@ -136,7 +134,6 @@
     font-size: 3vh;
     margin: 50px;
     color: antiquewhite;
-    text-align: center;
 }
 
 

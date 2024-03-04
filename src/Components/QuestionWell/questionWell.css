@@ -1,7 +1,11 @@
+.container-bg {
+    background-color: none;
+}
+  
+
 .question-wells-box{
     width: 100%;
     height: 90vh;
-    background-color: rgb(109, 109, 109, 0.5);
     display: flex;
 }
 
@@ -15,10 +19,20 @@
     position: absolute;
     width: 100px;
     height: 30px;
-    border: none;
+    border: 1px solid rgba(106, 198, 255);
+    background: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     border-radius: 10px;
     top: 5%;
     left: 2%;
+}
+
+.goBackBtn:hover{
+    background-color: rgb(255, 255, 255, 0.3);
+    cursor: pointer;
+    color: black;
 }
 
 .question-well-about{
@@ -35,16 +49,19 @@
     font-size: 3vw;
     text-transform: uppercase;
     margin: 0;
+    letter-spacing: 8px;
 }
 
 .question-well-about-text{
     width: 70%;
     margin: 0;
+    letter-spacing: 2px;
 }
 
 .questionWellImg{
     width: 80%;
     border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.3);
 }
 
 .question-well-tips{
@@ -58,22 +75,23 @@
 
 .tips-box{
     position: relative;
-    width: 90%;
+    width: 70%;
     height: 50px;
     border-radius: 20px;
-    background-color: rgb(16, 46, 80);
+    background-color: rgb(255, 255, 255, 0.2);
     display: flex;
     justify-content: flex-end;
     align-items: center;
     overflow: hidden; 
     transition: height 0.3s ease;
+    border: 0.3px solid rgba(106, 198, 255);
 }
 
 .tip-text{
     color: #fff;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     position: relative;
-    right: 50px;
+    right: 30px;
     width: 80%;
 }
 
@@ -84,14 +102,19 @@
     border-bottom-left-radius: 20px;
     width: 10%;
     height: 100%;
-    background-color: rgb(10, 71, 140);
+    background-color: rgba(31, 30, 40, 0.5);
     color: #fff;
     letter-spacing: 2px;
-    font-size: 3vw;
+    font-size: 1.5vw;
     margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.tip-arrow p{
+    transform: rotate(90deg);
 }
 
 .answer-div {
@@ -118,4 +141,89 @@
 
 .tips-box.expanded {
     height: 200px;  
+}
+
+.question-well-howTo, .question-well-how-to-second, .question-well-how-to-four{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.questionwell-how-to-text, .explain-text, .explain-text-two{
+    width: 30%;
+    padding: 2%;
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.questionwell-how-to-text{
+    width: 40%;
+}
+
+.question-well-second-img-div, .question-well-third-img-div, .question-well-four-img-div{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-well-second-img, .question-well-third-img, .question-well-four-img{
+    width: 90%;
+    margin: 5%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .question-wells-box{
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+
+    .question-well-about{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #fff;
+    }
+
+    .question-well-tips{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .goBackBtn{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgba(106, 198, 255);
+        background: none;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 50%;
+        top: 5%;
+        left: 2%;
+    }
+    
 }

@@ -84,14 +84,18 @@ export default function ChatGPT() {
     return (
         <div className='section-two'>
             <div className='left'>
-                <p className='chatGptTitle'>Prompts</p>
+                <p className='chatGptTitle'>Chat GPT</p>
                 <p className='chatGptText'>
-                    För att maximera resultaten med ChatGPT är det viktigt att
-                    behärska konsten att formulera prompts. Det utgör en central
-                    del av att dra nytta av olika AI-tjänster. Effektiv
-                    kommunikation med chatten spelar en avgörande roll. Klicka
-                    på plusen för att få några användbara tips att
-                    beakta.
+                    Hur blir jag AI-viskare?
+                    <br /><br />
+                    För att maximera resultaten med Large Language Models inom AI, 
+                    är det viktigt att behärska konsten att formulera prompts. 
+                    Det utgör en central del av att dra nytta av olika LLM-tjänster. 
+                    Effektiv kommunikation med chatten spelar en avgörande roll. 
+
+                    <br /><br />
+                    Klicka på plustecknen i bilden nedan för att få några användbara tips att beakta.
+                
                 </p>
             </div>
             <div className='right'>

@@ -55,9 +55,11 @@ export default function PromptEngineering() {
   return (
     <div className='section-three'>
       <div className='section-three-left'>
-        <p className='leftTitle'>Exempel på hur du skriver en mer utförlig prompt</p>
-        <p className='leftText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptas, doloribus voluptates inventore molestias temporibus impedit, reprehenderit eum necessitatibus aperiam natus nisi maxime incidunt saepe quis ex laboriosam quae explicabo?</p>
-        <p className='leftText'>Tryck på pilarna för att se en konversation med ChatGPT</p>
+        <p className='leftTitle'>Vad är Promt Engeneering? </p>
+        <p className='leftText'>Prompt engineering är ett relativt nytt, och mycket essentiellt begrepp när det kommer till framtiden med Large Language Models (LLM, en kategori inom AI).  
+        Prompt engeneering är en metod där du formulerar dina prompts på ett särskilt sätt för att få ut ett så optimalit svar som möjligt från AI:n. <br /> <br />
+        Att få ut bättre information från AI-modellen innebär att din digitala assistent kan utföra sina arbetsuppgifter bättre, som att t.ex. skriva mejl, nyhetsbrev, inlägg för sociala medier, generera kodstycken, analysera och sammanfatta längre texter, ta fram digitala bilder och musikstycken, interagera med kunder som en chatbot mm. </p>
+        <p className='leftText'>Tryck på pilarna för att se olika konversationer med ChatGPT</p>
         <div className="arrow-buttons">
           <button className='prevConv' onClick={prevConversation} disabled={currentConversation === 0}>Föregående konversation</button>
           <button className='nextConv' onClick={nextConversation} disabled={currentConversation === conversations.length - 1}>Nästa konversation</button>

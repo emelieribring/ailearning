@@ -6,6 +6,7 @@ import Header from '../../Components/Header/Header';
 
 import SectionOne from '../../Components/SectionOne/SectionOne';
 import QuestionStart from '../../Components/QuestionStart/QuestionStart';
+import BetweenText from '../../Components/BetweenText/BetweenText';
 import ChatGPT from '../../Components/ChatGPT/ChatGPT';
 import PromptEngineering from '../../Components/PromptEngineering/PromptEngineering';
 import Heads from '../../Components/Heads/Heads';
@@ -40,6 +41,7 @@ export default function Home() {
                 <div className="background"></div>
             </div>
             <QuestionStart/>
+            <BetweenText/>
             <ChatGPT/>
             <PromptEngineering/>
             <AiTools/>
