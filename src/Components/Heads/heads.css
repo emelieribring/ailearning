@@ -1,0 +1,52 @@
+.heads{
+    width: 100%;
+    height: 90vh;
+    margin-top: 20%;
+    display: flex;
+}
+
+.heads-left, .heads-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headsCitat{
+    width: 80%;
+    height: 20%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.headsCitat p{
+    font-size: 1.5vw;
+}
+
+.headsCitat span{
+    font-size: 5vw;
+    position: relative;
+    top: -15px;
+}
+
+.headsCitat img{
+    width: 40%;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    .heads{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .heads-left, .heads-right{
+        width: 100%;
+    }
+}

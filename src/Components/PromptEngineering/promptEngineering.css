@@ -1,0 +1,156 @@
+
+.section-three{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+    position: relative;
+    margin-top: 20%;
+    padding-bottom: 50px;
+    font-weight: 300;
+    margin-bottom: 20%;
+}
+
+.section-three-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leftTitle{
+    font-size: 6vh;
+    color: antiquewhite;
+    position: relative;
+    margin: 0;
+    left: 7%;
+    margin-top: 5%;
+}
+
+.leftText{
+    font-size: 3vh;
+    color: antiquewhite;
+    font-weight: 300;
+    padding: 20px;
+    position: relative;
+    left: 5%;
+}
+
+
+.arrow-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickLeft, .clickRight{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    border: none;
+    margin-top: 40px;
+}
+
+.prevConv, .nextConv{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.section-three-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.chat-bubble-you, .chat-bubble-me {
+    background-color: #ffffffb3;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 10px;
+    width: 70%; 
+    position: relative;
+    margin-top: 5%;
+    font-weight: 300;
+  }
+  
+  .chat-bubble-me::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #ffffffb3 transparent transparent;
+  }
+
+  .chat-bubble-you::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffffffb3;
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .section-three{
+        flex-wrap: wrap;
+    }
+
+    .section-three-left, .section-three-right{
+        width: 100%;
+        height: 50%;
+    }
+
+    .section-three-left {
+        justify-content: flex-start;
+        position: relative;
+        top: 50px;
+    }
+
+    .section-three-right{
+        justify-content: flex-start;
+        position: relative;
+        top: 20px;
+    }
+
+    .leftTitle{
+        font-size: 3.5vh;
+        margin: 0;
+        width: 90%;
+    }
+
+    .leftText{
+        font-size: 2vh;
+        width: 90%;
+        left: 0;
+    }
+
+
+
+    .prevConv, .nextConv{
+        width: 100px;
+        height: 50px;
+        margin: 20px;
+    }
+
+    .chat-bubble-you, .chat-bubble-me {
+        margin-top: 10%;
+    }
+
+}

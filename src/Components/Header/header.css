@@ -1,6 +1,5 @@
 .header{
-    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.5)), url(../../Images/robot.jpg);
-    background-size: cover;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -12,7 +11,7 @@
     font-size: 9vh;
     letter-spacing: 6px;
     text-transform: uppercase;
-    color: antiquewhite;
+    color: #fff;
     font-weight: 600;
     align-self: center;
     text-align: center;
@@ -24,14 +23,15 @@
     align-items: center;
     width: 20%;
     height: 2%;
-    border-radius: 15px;
+    border-radius: 10px;
     text-transform: uppercase;
     padding: 2%;
-    font-weight: 100;
-    font-size: 3vh;
-    background-color: antiquewhite;
+    font-size: 2vh;
+    letter-spacing: 5px;
+    background-color: #fff;
     border: none;
     color: #000;
+    font-weight: 400;
     text-decoration: none;
     transition: background-color 0.3s ease; /* Lägg till övergångseffekt för knappen */
 }
@@ -44,5 +44,7 @@
 
     .startBtn{
         width: 70%;
+        height: 5%;
+        letter-spacing: 5px;
     }
 }

@@ -1,0 +1,224 @@
+.section-two{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+    position: relative;
+    margin-top: 2%;
+    font-weight: 300;
+}
+
+.chat{
+    width: 100%;
+    height: 90%;
+    background-size: cover;
+    margin: 20px;
+    border-radius: 20px;
+    background-image: url(../../Images/chatgpt.png);
+}
+
+.plus-1, .plus-2, .plus-3, .plus-4, .plus-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: rgb(54, 104, 162);
+    position: absolute;
+    border: 2px solid #fff;
+    font-size: 6vh;
+    font-weight: 800;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 253, 232, 0.8); 
+    animation: blink 1s infinite alternate; /* Animeringsnamn, varaktighet, iterationer, riktning */
+    cursor: pointer;
+    left: 10%;
+    top: 15%;
+}
+
+.plus-1.clicked, .plus-2.clicked, .plus-3.clicked, .plus-4.clicked, .plus-5.clicked {
+    background-color: rgb(100, 2, 72); /* Byt ut 'red' mot din önskade färgkod */
+}
+
+.plus-2{
+    left: 80%;
+    top: 30%;
+}
+
+.plus-3{
+    left: 40%;
+    top: 50%;
+}
+
+.plus-4{
+    left: 10%;
+    top: 70%;
+}
+
+.plus-5{
+    left: 70%;
+    top: 70%;
+}
+
+@keyframes blink {
+    to {
+      box-shadow: 0 0 20px rgba(255, 241, 241, 0.8); /* Justera skuggans egenskaper vid animeringens slutpunkt */
+    }
+  }
+
+.popup-box-1, .popup-box-2, .popup-box-3, .popup-box-4, .popup-box-5{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(194, 192, 192);
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+    padding: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.popup-box-2{
+    left: 45%;
+    top: 15%;
+}
+
+.popup-box-3{
+    left: 30%;
+    top: 10%;
+}
+
+.popup-box-4{
+    left: 20%;
+    top: 60%; 
+    width: 450px;
+    height: 200px;
+}
+
+.popup-box-5{
+    left: 10%;
+    top: 60%; 
+    width: 300px;
+    height: 400px;
+    z-index: 1;
+}
+
+
+.left{
+    display: flex;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.chatGptTitle{
+    font-size: 5vh;
+    text-transform: uppercase;
+    margin: 20px;
+    position: relative;
+    left: 5%;
+    color: antiquewhite;
+}
+
+.chatGptText{
+    font-size: 3vh;
+    margin: 50px;
+    color: antiquewhite;
+}
+
+
+.right{
+    display: flex;
+    position: relative;
+    width: 60%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .section-two{
+        flex-wrap: wrap;
+        height: 150vh;
+    }
+
+    .left{
+        width: 100%;
+        height: 50%;
+    }
+
+    .right{
+        width: 100%;
+        height: 50%;
+    }
+
+    .chat{
+        width: 100%;
+        height: 70%;
+        margin: 20px;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        background-position: 50% 50%;
+    }
+
+    .plus-1, .plus-2, .plus-3, .plus-4, .plus-5{
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .plus-1{
+        left: 20%;
+        top: 20%;
+    }
+
+    .plus-2{
+        left: 60%;
+        top: 30%;
+    }
+    
+    .plus-3{
+        left: 40%;
+        top: 50%;
+    }
+    
+    .plus-4{
+        left: 10%;
+        top: 70%;
+    }
+
+    .popup-box-1{
+        left: 5%;
+        top: 28%;
+    }
+    
+    .popup-box-2{
+        left: 10%;
+        top: 45%;
+    }
+    
+    .popup-box-3{
+        left: 10%;
+        top: 10%;
+    }
+    
+    .popup-box-4{
+        left: 7%;
+        top: 10%; 
+        width: 350px;
+        height: 250px;
+    }
+
+}

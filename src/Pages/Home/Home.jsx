@@ -1,11 +1,17 @@
 import React, { useEffect } from 'react';
 import './home.css';
+
 import Navbar from '../../Components/Navbar/Navbar';
-import SectionOne from '../../Components/SectionOne/SectionOne';
 import Header from '../../Components/Header/Header';
-import SectionTwo from '../../Components/SectionTwo/SectionTwo';
-import SectionThree from '../../Components/SectionThree/SectionThree';
-import SectionFour from '../../Components/SectionFour/SectionFour';
+
+import SectionOne from '../../Components/SectionOne/SectionOne';
+import QuestionStart from '../../Components/QuestionStart/QuestionStart';
+import BetweenText from '../../Components/BetweenText/BetweenText';
+import ChatGPT from '../../Components/ChatGPT/ChatGPT';
+import PromptEngineering from '../../Components/PromptEngineering/PromptEngineering';
+import AiTools from '../../Components/AiTools/AiTools.jsx';
+import PictoryAi from '../../Components/PictoryAi/PictoryAi';
+import Heads from '../../Components/Heads/Heads';
 import Footer from '../../Components/Footer/Footer';
 
 export default function Home() {
@@ -35,13 +41,13 @@ export default function Home() {
             <div className="background-wrapper">
                 <div className="background"></div>
             </div>
-            <SectionFour/>
-            <SectionOne/>
-            <SectionOne/>
-            <SectionTwo/>
-            <SectionThree/>
-            <SectionOne/>
-            <SectionOne/>
+            <QuestionStart/>
+            <BetweenText/>
+            <ChatGPT/>
+            <PromptEngineering/>
+            <AiTools/>
+            <PictoryAi/>
+            <Heads/>
             <SectionOne/>
             <Footer/>
     </div>

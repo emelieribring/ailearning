@@ -1,5 +1,5 @@
 .navbar{
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     height: 10vh;
     width: 100%;
     display: flex;
@@ -9,7 +9,7 @@
 
 @media only screen and (max-width: 500px) {
 
-    .logo{
+    .nav-logo{
         width: 80%;
         height: 90%;
     }

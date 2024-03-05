@@ -1,0 +1,24 @@
+.between-text{
+    width: 100%;
+    height: 40vh;
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.between-text-text{
+    color: #fff;
+    width: 70%;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .between-text-text{
+        font-size: 4vw;
+    }
+}
+
