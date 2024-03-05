@@ -1,3 +1,4 @@
+
 .section-three{
     width: 100%;
     height: fit-content;
@@ -129,13 +130,18 @@
     }
 
     .leftTitle{
-        font-size: 4vh;
+        font-size: 3.5vh;
         margin: 0;
+        width: 90%;
     }
 
     .leftText{
-        font-size: 2vh
+        font-size: 2vh;
+        width: 90%;
+        left: 0;
     }
+
+
 
     .prevConv, .nextConv{
         width: 100px;

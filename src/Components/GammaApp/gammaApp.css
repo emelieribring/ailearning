@@ -114,3 +114,32 @@
 .gamma-app-second-img-div{
     width: 70%;
 }
+
+@media only screen and (max-width: 500px) {
+    .gamma-app-box{
+       flex-direction: column;
+       height: 150vh;
+    }
+
+    .gamma-app-about{
+        width: 100%;
+        position: relative;
+    }
+
+    .gamma-app-about-title{
+        font-size: 4vw;
+        margin-bottom: 30px;
+    }
+    
+    .gamma-app-second-div, .gamma-app-third-div, .gamma-app-four-div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .gamma-app-second-img-div{
+        width: 85%;
+    }
+}

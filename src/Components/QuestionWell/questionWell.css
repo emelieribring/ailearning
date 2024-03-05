@@ -27,6 +27,7 @@
     border-radius: 10px;
     top: 5%;
     left: 2%;
+    z-index: 999;
 }
 
 .goBackBtn:hover{
@@ -189,8 +190,6 @@
         height: 150vh;
         display: flex;
         flex-direction: column;
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid #fff;
     }
 
     .question-well-about{
@@ -225,5 +224,25 @@
         top: 5%;
         left: 2%;
     }
-    
+
+    .question-well-howTo, .question-well-how-to-second, .question-well-how-to-four{
+        flex-direction: column;
+    }
+
+    .questionwell-how-to-text, .explain-text, .explain-text-two{
+        width: 90%;
+    }
+
+    .question-well-second-img-div, .question-well-third-img-div, .question-well-four-img-div{
+        width: 100%;
+    }
+
+    .tip-text{
+        color: #fff;
+        letter-spacing: 4px;
+        position: relative;
+        right: 10px;
+        width: 80%;
+        font-size: 2.5vw;
+    }
 }

@@ -9,9 +9,10 @@ import QuestionStart from '../../Components/QuestionStart/QuestionStart';
 import BetweenText from '../../Components/BetweenText/BetweenText';
 import ChatGPT from '../../Components/ChatGPT/ChatGPT';
 import PromptEngineering from '../../Components/PromptEngineering/PromptEngineering';
+import AiTools from '../../Components/AiTools/AiTools.jsx';
+import PictoryAi from '../../Components/PictoryAi/PictoryAi';
 import Heads from '../../Components/Heads/Heads';
 import Footer from '../../Components/Footer/Footer';
-import AiTools from '../../Components/AiTools/AiTools.jsx';
 
 export default function Home() {
     useEffect(() => {
@@ -45,6 +46,7 @@ export default function Home() {
             <ChatGPT/>
             <PromptEngineering/>
             <AiTools/>
+            <PictoryAi/>
             <Heads/>
             <SectionOne/>
             <Footer/>

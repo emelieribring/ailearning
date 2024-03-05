@@ -16,3 +16,9 @@
 }
 
 
+@media only screen and (max-width: 500px) {
+    .between-text-text{
+        font-size: 4vw;
+    }
+}
+

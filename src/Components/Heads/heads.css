@@ -39,3 +39,14 @@
     width: 40%;
     padding-right: 20px;
 }
+
+@media only screen and (max-width: 500px) {
+    .heads{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .heads-left, .heads-right{
+        width: 100%;
+    }
+}
