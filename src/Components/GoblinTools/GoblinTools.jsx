@@ -80,7 +80,6 @@ export default function QuestionWell() {
                 {tipStates[index] && (
                   <div className="answer-div-goblin">
                     <p>{tip.answerText}</p>
-                    {tip.img && <img src={tip.img} alt="Tip Image" />}
                   </div>
                 )}
               </div>

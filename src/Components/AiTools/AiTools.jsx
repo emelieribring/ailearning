@@ -4,7 +4,7 @@ import 'animate.css';
 import QuestionWell from '../QuestionWell/QuestionWell.jsx';
 import GammaApp from '../GammaApp/GammaApp';
 import GoblinTools from '../GoblinTools/GoblinTools';
-import questionWellCard from '../../Images/questionwellcard.webp';
+
 export default function AiTools() {
 
     const [showQuestionWell, setShowQuestionWell] = useState(false);

@@ -19,12 +19,12 @@ body {
 
 .footer-text {
     width: 100%;
-    font-size: 20vw;
+    font-size: 21vw;
     position: absolute;
     margin: 0;
     padding: 0;
     font-weight: 700;
-    top: 57%;
+    top: 49%;
     left: 0;
 }
 
@@ -35,7 +35,7 @@ body {
     border-radius: 50%;
     position: relative;
     right: 32.8%;
-    bottom: 31%;
+    bottom: 29%;
     z-index: 999;
 }
 
