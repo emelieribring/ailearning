@@ -22,7 +22,6 @@
 .plus-1, .plus-2, .plus-3, .plus-4, .plus-5{
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 4vw;
     height: 4vw;
     border-radius: 50%;

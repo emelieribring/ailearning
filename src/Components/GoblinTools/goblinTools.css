@@ -47,6 +47,10 @@
     border: 1px solid rgba(106, 198, 255);
 }
 
+.tip-arrow-goblin-tools.expanded{
+    height: fit-content;
+}
+
 
 .tip-arrow-goblin-tools{
     position: absolute;

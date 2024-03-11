@@ -5,25 +5,29 @@ import goblinToolsPic1 from '../../Images/goblintools.jpg';
 
 const tipsData = [
   {
-    tipText: 'Magic To-Do',
-    answerText: 'Every creative endeavor requires that you take risks. If you try and don`t succeed, you`ve still learned something. It took Thomas Edison more than 10,000 tries to invent a viable lightbulb. You`re not failing. You`re discovering what doesn`t work.',
+    tipText: 'AI-att-göra-lista',
+    answerText: 'Det här verktyget hjälper dig genom att bryta ner uppgifter åt dig, så att du inte själv behöver tänka på det. Sidan är väldigt enkel och minimalistisk, byggd för att vara lätt att orientera sig på. Du kan lägga in en huvuduppgift, och under den bryta ner huvuduppgiften i mindre uppgifter, samt sätta en uppskattning av hur mycket tid var segment ska ta. Detta hjälper enormt med att enkelt skapa struktur och bryta ner uppgifter, som annars kan kännas klyddiga eller överväldigande.',
     img: goblinToolsPic1,
   },
   {
-    tipText: 'Judge',
-    answerText: 'To spark creativity, feed your brain material like you`re cramming for a tough test. Then stop thinking about the problem you want to solve. Go surfing or take a leisurely walk. Research shows that letting your mind wander fosters creativity. It’s also found that meditation helps you spot and solve problems in creative ways. It promotes divergent thinking that gets novel ideas flowing. According to these studies, meditation also makes you more open to considering new solutions. Time to breathe.',
+    tipText: 'Formuleraren',
+    answerText: 'Den här delen av GoblinTools "översätter" texter - både på svenska och engelska - så att dem passar till andra toner och sammanhang. Du kan bland annat göra en text mer formell, sarkastisk, proffesionell, vänlig eller lättare att läsa och förstå! Här nedan har vi ett exempel:',
   },
   {
-    tipText: 'Estimator',
-    answerText: 'Text',
+    tipText: 'Domaren',
+    answerText: 'Känns det svårt att uttrycka rätt ton i text? Domaren är en AI-verktyg att konsultera om du är osäker på tonen i dina mejl, meddelanden eller sms. Vi kommunicerar allt mer i text och chatt i dagen samhälle, och att lyckas förmedla rätt ton och budskap i textblir då allt viktigare. Med domaren vid din sida har du som användare en klar fördel i effektiviserad kommunikation och förebygge av missförstånd i framtiden. Du har för extra tillgänglighet också möjligheten att använda din mikrofon och tala in en mening eller röstmeddelande. Du kan även trycka på plus-knappen för att lägga in ett svar på en konversation, och på så sätt kunna ge mer kontext! ',
   },
   {
-    tipText: 'Compiler',
-    answerText: 'Text',
+    tipText: 'Uppskattaren',
+    answerText: 'Svårt att planera din tid, är du tidspessimist, tisoptimist, eller har bara i allmänhet dålig tidsuppfattning? Många människor med t.ex. ADHD kan ha problem med att planera och förutsäga hur lång tid saker kan ta att göra, även om bristen på den förmågan såklart inte är exklusiv för den demografin, enbart. Fyll i vad du har för uppgift, och estimeraren kan här hjälpa dig genom att returnera en tidsuppskattning på nolltid! ',
   },
   {
-    tipText: 'Chef',
-    answerText: 'Text',
+    tipText: 'Kompileraren',
+    answerText: 'Det finns många lösryckta tankar och idér och små saker vi säger att vi ska ta tag i för att sedan glömma i nästa sekund då minnet och påminnelsen av något annat vi skulle göra swishar förbi. I den här rutan kan du dumpa ner alla dina lösa tankar och i gengäld få en strukturerad lista att följa, snarlik Att-göra-listan, men här istället med en långt mer förenklad, mer specifik funktion. Du har i slutet även alternativet att föra över listan som genereras här till den lite mer komplexa multi-toolen "Magic to Do", eller AI-att-göra-listan vi beskrev i den första fliken. ',
+  },
+  {
+    tipText: 'Kocken',
+    answerText: 'Dålig på recept? I det här verktyget kan du skriva ner vilka matvaror du har hemma, för hur många personer rätten ska räcka till, potentiella allergier eller diet-restriktioner. Ai:n ger dig sedan ett förslag på recept! ',
   }
 ];
 

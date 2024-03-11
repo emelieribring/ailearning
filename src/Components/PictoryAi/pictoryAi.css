@@ -1,7 +1,36 @@
+.show-pictory{
+    width: 40vw;
+    height: 10vh;
+    border-radius: 20px;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-family: Aeonik;
+    font-weight: 300;
+}
+
+
 .pictoryAI{
     width: 100%;
-    height: 90vh;
-    background-color: darkblue;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+    font-weight: 300;
+    font-family: Aeonik;
+    font-size: 1.2vw;
+}
+
+.pictory-title{
+    color: #fff;
+    font-size: 10vw;
+    margin: 0;
+}
+
+.pictory-section-one, .pictory-section-two{
+    width: 100%;
+    height: fit-content;
     position: relative;
     display: flex;
 }
@@ -12,8 +41,153 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 3vw;
 }
 
 .pictory-div-two img{
     width: 95%;
+    border-radius: 20px;
+}
+
+.inBetween{
+    width: 50%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 5vh;
+}
+
+.pictory-section-two{
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+}
+
+.imgBox{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidePictory{
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    color: #fff;
+}
+
+.imgBox:hover .hidePictory {
+    visibility: visible; /* Gör elementet synligt */
+}
+
+.boxImg{
+    width: 200px;
+}
+
+
+.pictory-section-two .imgBox img {
+    filter: blur(2px); /* Blurrar alla bilder när någon av dem hovras över */
+}
+
+
+.pictory-section-two .imgBox:hover img {
+    filter: blur(0); /* Tar bort blureffekten från bilden i den div som hovras över */
+    width: 250px;
+}
+
+.pictory-pictures, .final-video{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pictory-pictures img{
+    width: 70%;
+    border-radius: 20px;
+    margin: 5vh;
+}
+
+
+.pictory-last-section{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10vh;
+    color: #fff;
+}
+
+.pictory-last-section p{
+    width: 30%;
+}
+
+.pictory-last-section img{
+    width: 40%;
+    border-radius: 20px;
+}
+
+.final-video video{
+    width: 80%;
+    border-radius: 20px;
+    margin: 10vh;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .pictoryAI{
+        font-size: 3vw;
+    }
+
+    .pictory-section-one{
+        flex-direction: column;
+    }
+
+    .pictory-div-one, .pictory-div-two{
+        width: 90%;
+    }
+
+    .inBetween{
+        width: 90%;
+    }
+
+    .imgBox{
+        width: 150px;
+        height: 210px;
+        justify-content:space-around;
+        align-items: center;
+    }
+
+    .boxImg{
+        width: 100px;
+    }  
+    
+    .pictory-section-two .imgBox:hover img {
+        width: 120px;
+    }
+
+    .hidePictory{
+       font-size: 3vw;
+       text-align: center;
+       margin: 0;
+    }
+
+    .show-pictory{
+        font-size: 3vw;
+        height: 5vh;
+        width: 50vw;
+        border-radius: 10px;
+    }
+
 }

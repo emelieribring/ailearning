@@ -43,8 +43,8 @@ export default function AiTools() {
     {showBoxes && (
     <div className='question-test'>
         <div className="boxesTitle">
-          <h1 className='box'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga velit, magnam repellendus et, distinctio facere perferendis, quasi architecto dicta incidunt quae! Delectus distinctio deserunt debitis commodi quaerat nesciunt vel earum?</p>
+          <h1 className='box'>Ai VERKTYG </h1>
+          <p>Här hittar du några riktigt bra ai-vertyg att använda dig av. Dom effektiviserar och underlättar flera olika aspekter av ditt arbete.</p>
         </div>
         <div className='clickBoxes'>
             <div onMouseEnter={handleHover} onMouseLeave={handleHoverOut} className="clickBox questionWell-box animate__animated">
